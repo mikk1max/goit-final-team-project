@@ -1,5 +1,7 @@
 .header {
   padding: 20px 0;
+  background-color: blue;
+  color: yellowgreen;
 }
 
 .nav-list {
@@ -17,5 +19,5 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #747bff;
+  color: white;
 }
