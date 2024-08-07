@@ -62,7 +62,7 @@ border: none;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
   .rent-image{
-    background-image: url(../img/images/image\ 4\ 2x.jpg);
+    background-image: url(/img/images/image\ 4\ 2x.jpg);
   }
 }
 @media (min-width: 678px) {
@@ -76,13 +76,13 @@ border: none;
     margin-top: 50px;
   }
   .rent-image{
-    background-image: url(../img/images/image\ 4\ tab.jpg);
+    background-image: url(/img/images/image\ 4\ tab.jpg);
   }
   @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
   .rent-image{
-    background-image: url(../img/images/image\ 4\ tab\ 2x.jpg);
+    background-image: url(/img/images/image\ 4\ tab\ 2x.jpg);
   }
 }
 }
@@ -91,13 +91,13 @@ border: none;
     width: 1180px;
   }
   .rent-image{
-    background-image: url(../img/images/image\ 4\ tab.jpg);
+    background-image: url(/img/images/image\ 4\ tab.jpg);
   }
   @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
   .rent-image{
-    background-image: url(../img/images/image\ 4\ lap\ 2x.jpg);
+    background-image: url(/img/images/image\ 4\ lap\ 2x.jpg);
   }
 }
 }
