@@ -1,4 +1,103 @@
-.sec-rent-form {
-  background-color: black;
-  color: wheat;
+.rent-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #242424;
+}
+.rent-title{
+  font-weight: 500;
+font-size: 28px;
+line-height: 1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+}
+.rent-formular{
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 18px;
+width: 336px;
+background-color: transparent;
+margin-bottom: 40px;
+margin-top: 40px;
+}
+.rent-input{
+  
+border: 1px solid rgba(251, 251, 251, 0.2);
+border-radius: 12px;
+width: 335px;
+height: 42px;
+background-color: transparent;
+}
+.rent-area{
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  width: 335px;
+  height: 108px;
+  background-color: transparent;
+}
+.rent-button{
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border-radius: 15px;
+padding: 14px 44px;
+background: #1b414b;
+margin-bottom: 80px;
+font-weight: 500;
+line-height: 1.1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+border: none;
+}
+.rent-image{
+  display: block;
+  width: 336px;
+  height: 412px;
+  border-radius: 24px;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .rent-image{
+    background-image: url(../img/images/image\ 4\ 2x.jpg);
+  }
+}
+@media (min-width: 678px) {
+  .rent-form{
+    width: 704px;
+    padding-left: 148px;
+    padding-right: 148px;
+  }
+  .rent-formular{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .rent-image{
+    background-image: url(../img/images/image\ 4\ tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .rent-image{
+    background-image: url(../img/images/image\ 4\ tab\ 2x.jpg);
+  }
+}
+}
+@media (min-width: 1280px) {
+  .rent-form{
+    width: 1180px;
+  }
+  .rent-image{
+    background-image: url(../img/images/image\ 4\ tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .rent-image{
+    background-image: url(../img/images/image\ 4\ lap\ 2x.jpg);
+  }
+}
 }
