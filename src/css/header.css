@@ -1,3 +1,119 @@
+/** ========= HEADER ========= */
+.page-header {
+}
+
+.header-container {
+  position: absolute;
+  width: 335px;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fbfbfb;
+  border-radius: 8px;
+  background: #fbfbfb;
+}
+
+.header-nav {
+}
+
+.header-logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+  display: block;
+  padding: 12px 0 13px 20px;
+}
+
+.header-nav-list,
+.header-soc {
+  display: none;
+}
+
+.header-nav-item {
+}
+.header-nav-link {
+}
+.current {
+}
+.active {
+}
+.header-soc {
+}
+.header-soc-item {
+}
+.header-soc-link {
+}
+.header-soc-icon {
+}
+
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  fill: #1b414b;
+}
+
+/** ========= MOBILE MENU ========= */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  overflow: auto;
+  background-color: #0e1823;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+}
+
+.mobile-menu-close-container {
+  position: absolute;
+}
+
+.mobile-menu-close-btn {
+}
+.mobile-menu-close-icon {
+}
+.mobile-menu-nav {
+}
+.mobile-menu-nav-list {
+}
+.mobile-menu-nav-item {
+}
+.mobile-menu-nav-link {
+}
+.mobile-menu-soc {
+}
+.mobile-menu-soc-list {
+}
+.mobile-menu-soc-item {
+}
+.mobile-menu-soc-link {
+}
+.mobile-menu-soc-icon {
+}
+
 .header {
   padding: 20px 0;
   background-color: blue;
