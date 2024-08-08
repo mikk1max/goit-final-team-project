@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/goit-final-team-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-final-team-project/assets/index-11eb6fb4.css">
+    <link rel="stylesheet" href="/goit-final-team-project/assets/index-1bc4a625.css">
   </head>
   <body>
     <div class="header-container">
@@ -191,7 +191,34 @@
 </section>
       <section class="sec-features">Features</section>
 
-      <section class="sec-rent-form">Rent form</section>
+      <section class="rent-form">
+    <div class="rent-container">
+        <div class="rent-form-container">
+            <h2 class="rent-title">Rent a yacht now</h2>
+            <form class="rent-formular">
+                <input class="rent-input" type="text" name="name" placeholder="Full name" required>
+                <input class="rent-input" type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email" required>
+                <input class="rent-input" type="number" pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$" placeholder="Phone number" required>
+                <textarea class="rent-area" name="" id="" placeholder="Comment"></textarea>
+            </form>
+            <button type="submit" class="rent-button">send</button>
+
+        </div>
+        
+        
+        <div class="rent-container-image">
+            <picture class="rent-images-group">
+                <source srcset="/goit-final-team-project/assets/pc2_1x-f9112c2b.jpg 1x, /goit-final-team-project/assets/pc2_2x-8058857d.jpg 2x" media="(min-width: 1439px)">
+                <source srcset="/goit-final-team-project/assets/pc1_1x-a6d53d42.jpg 1x, /goit-final-team-project/assets/pc1_2x-2ad87703.jpg 2x" media="(min-width: 1279px)">
+                <source srcset="/goit-final-team-project/assets/tablet_1x-2f0ebe1c.jpg 1x, /goit-final-team-project/assets/tablet_2x-88d4ac4c.jpg 2x" media="(min-width: 768px)">
+                <source srcset="/goit-final-team-project/assets/mobile_1x-dbd4a19e.jpg 1x, /goit-final-team-project/assets/mobile_2x-fb99ee3d.jpg 2x" media="(max-width: 767px)">
+                <img class="rent-image" src="/goit-final-team-project/assets/mobile_1x-dbd4a19e.jpg" alt="yacht">
+            </picture>
+        </div>
+    </div>
+       
+    
+</section>
 
       <section class="sec-reviews"></section>
 
