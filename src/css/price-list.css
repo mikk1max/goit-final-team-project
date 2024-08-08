@@ -139,7 +139,16 @@
 .param-value-item {
   color: var(--black);
 }
-
+@media (max-width: 374px) {
+  .yacht-card {
+    width: 100%;
+  }
+  .card-title-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    gap: unset;
+  }
+}
 @media (min-width: 768px) {
   .card-title-wrapper {
     gap: 22px;
@@ -166,7 +175,6 @@
     padding: 16px 40px;
     font-size: 18px;
     line-height: 1.1;
-    max-width: 179px;
   }
   .t-card {
     display: block;
