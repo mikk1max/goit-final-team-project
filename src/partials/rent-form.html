@@ -1,11 +1,28 @@
 <section class="rent-form">
-    <h2 class="rent-title">Rent a yacht now</h2>
-    <form class="rent-formular">
-        <input class="rent-input" type="text" name="name" placeholder="Full name" required>
-        <input class="rent-input" type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email">
-        <input class="rent-input" type="number" pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$" placeholder="Phone number">
-        <textarea class="rent-area" name="" id="" placeholder="Comment"></textarea>
-    </form>
-    <button type="submit" class="rent-button">send</button>
-    <img class="rent-image" src="/img/images/image 4.jpg" alt="yacht">
+    <div class="rent-container">
+        <div class="rent-form-container">
+            <h2 class="rent-title">Rent a yacht now</h2>
+            <form class="rent-formular">
+                <input class="rent-input" type="text" name="name" placeholder="Full name" required>
+                <input class="rent-input" type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email" required>
+                <input class="rent-input" type="number" pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$" placeholder="Phone number" required>
+                <textarea class="rent-area" name="" id="" placeholder="Comment"></textarea>
+            </form>
+            <button type="submit" class="rent-button">send</button>
+
+        </div>
+        
+        
+        <div class="rent-container-image">
+            <picture class="rent-images-group">
+                <source srcset="/img/pc2_1x.jpg 1x, /img/pc2_2x.jpg 2x" media="(min-width: 1439px)">
+                <source srcset="/img/pc1_1x.jpg 1x, /img/pc1_2x.jpg 2x" media="(min-width: 1279px)">
+                <source srcset="/img/tablet_1x.jpg 1x, /img/tablet_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="/img/mobile_1x.jpg 1x, /img/mobile_2x.jpg 2x" media="(max-width: 767px)">
+                <img class="rent-image" src="/img/mobile_1x.jpg" alt="yacht">
+            </picture>
+        </div>
+    </div>
+       
+    
 </section>
