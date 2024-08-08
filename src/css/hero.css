@@ -1,3 +1,7 @@
+.sec-hero * {
+  box-sizing: border-box;
+}
+
 .sec-hero {
   padding: 260px 20px 302px 20px;
   background-image: url(/img/hero-mob.jpg),
@@ -60,10 +64,115 @@
   letter-spacing: -0.02em;
   color: #fbfbfb;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #fbfbfb;
   color: #1b414b;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-hero {
+    width: 768px;
+    padding: 280px 32px 282px 32px;
+    background-image: url(/img/hero-tab.jpg),
+      linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      );
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .sec-hero {
+      background-image: url(/img/hero-tab-2x.jpg),
+        linear-gradient(
+          360deg,
+          rgba(17, 19, 31, 0.8) 15.05%,
+          rgba(17, 19, 31, 0.8) 75.3%,
+          rgba(17, 19, 31, 0.8) 98.27%
+        );
+    }
+  }
+
+  .hero-title {
+    font-size: 70px;
+    margin: 0 auto 24px auto;
+  }
+  .hero-text {
+    width: 597px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto 48px auto;
+  }
+
+  .hero-btn {
+    padding: 16px 40px;
+    background-color: #1b414b;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sec-hero {
+    width: 1280px;
+    padding: 235px 139px 215px 140px;
+    background-image: url(/img/hero-des.jpg),
+      linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      );
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .sec-hero {
+      background-image: url(/img/hero-des-2x.jpg),
+        linear-gradient(
+          360deg,
+          rgba(17, 19, 31, 0.8) 15.05%,
+          rgba(17, 19, 31, 0.8) 75.3%,
+          rgba(17, 19, 31, 0.8) 98.27%
+        );
+    }
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sec-hero {
+    width: 1440px;
+    padding: 235px 220px 215px 219px;
+    background-image: url(/img/hero-des-big.jpg),
+      linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      );
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .sec-hero {
+      background-image: url(/img/hero-des-big-2x.jpg),
+        linear-gradient(
+          360deg,
+          rgba(17, 19, 31, 0.8) 15.05%,
+          rgba(17, 19, 31, 0.8) 75.3%,
+          rgba(17, 19, 31, 0.8) 98.27%
+        );
+    }
+  }
 }
