@@ -1,23 +1,132 @@
-.header {
-  padding: 20px 0;
-  background-color: blue;
-  color: yellowgreen;
+/** ========= HEADER ========= */
+
+* {
+  box-sizing: border-box;
 }
 
-.nav-list {
+.header-container {
+  position: absolute;
+  width: 335px;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+  border: 1px solid #fbfbfb;
+  border-radius: 8px;
+  background-color: #fbfbfb;
+  padding: 12px 20px;
 }
 
-.nav-link {
+.header-logo {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+  display: flex;
+  align-items: center;
+  width: 52px;
+  height: 18px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: white;
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
+
+.burger-icon {
+  fill: transparent;
+  stroke: #1b414b;
+}
+
+.header-nav-list,
+.header-soc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 704px;
+    padding: 12px 28px;
+  }
+
+  .header-logo {
+    width: 74px;
+    height: 24px;
+    font-size: 20px;
+    margin-right: 113px;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .header-nav-list,
+  .header-soc,
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav-list {
+  gap: 4px;
+}
+
+.header-nav-link {
+  border-radius: 8px;
+  padding: 15px 25px;
+  background-color: rgba(27, 65, 75, 0.5);
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  background-color: #1b414b;
+}
+
+.header-soc {
+  gap: 8px;
+}
+
+.header-soc-icon {
+  fill: #1b414b;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-soc-link:hover .header-soc-icon,
+.header-soc-link:focus .header-soc-icon {
+  fill: #062730;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    width: 1080px;
+    padding: 12px 30px;
+  }
+
+  .header-logo {
+    margin-right: 296px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    width: 1240px;
+  }
+
+  .header-logo {
+    margin-right: 375px;
+  }
+}
+
+/** ========= END HEADER ========= */
