@@ -1,4 +1,163 @@
-.sec-rent-form {
-  background-color: black;
-  color: wheat;
+.rent-form {
+  padding: 80px 0;
+  background-color: #242424;
+}
+.rent-container{
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rent-title{
+  font-weight: 500;
+font-size: 28px;
+line-height: 1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+}
+.rent-formular{
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 18px;
+min-width: 320px;
+max-width: 375px;
+background-color: transparent;
+margin-bottom: 40px;
+margin-top: 40px;
+}
+.rent-input{
+  
+border: 1px solid rgba(251, 251, 251, 0.2);
+border-radius: 12px;
+/* padding-left: 18px; */
+width: 100%;
+height: 42px;
+background-color: transparent;
+}
+.rent-input::placeholder {
+  padding-left: 18px;
+}
+.rent-area{
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  /* padding-left: 18px; */
+  padding-top: 14px;
+  width: 100%;
+  height: 108px;
+  background-color: transparent;
+}
+.rent-area::placeholder {
+  padding-left: 18px;
+}
+.rent-button{
+gap: 10px;
+border-radius: 15px;
+padding: 14px 44px;
+background: #1b414b;
+margin-bottom: 80px;
+text-transform: capitalize;
+font-weight: 500;
+line-height: 1.1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+border: none;
+}
+.rent-image{
+  /* display: block; */
+  border-radius: 24px;
+  max-width: 100%;
+}
+
+
+/* @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .rent-image{
+    background-image: url(../img/rent-form-image2x.jpg);
+  }
+} */
+ .rent-image{
+  width: 335px;
+  height: 412px;
+ }
+/* tablet  */
+@media (min-width: 768px) {
+  .rent-container {
+    max-width: 704px;
+    padding-bottom: 150px;
+  }
+  .rent-form-container{
+     padding-left: 148px;
+    padding-right: 148px;
+  }
+  .rent-formular{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  /* .rent-image{
+    
+    background-image: url(../img/rent-form-image-tablet.jpg);
+  } */
+  /* @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .rent-image{
+    background-image: url(../img/rent-form-image-tablet2x.jpg);
+  }
+} */
+.rent-image{
+  width: 704px;
+  height: 534px;
+ }
+}
+/* computer 1280 */
+@media (min-width: 1280px) {
+  .rent-form{
+    width: 1280px;
+  }
+   .rent-container{
+    max-width: 1180px;
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 0px 0px 150px;
+  }
+  .rent-container > div{
+    flex-grow: 1;
+  }
+  .rent-form-container{
+    padding: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  /* .rent-image{
+    background-image: url(../img/rent-form-image-laptop.jpg);
+  
+  } */
+  /* @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .rent-image{
+    background-image: url(../img/rent-form-image-laptop2x.jpg);
+  }
+} */
+.rent-image{
+  width: 658px;
+  height: 536px;
+ }
+}
+/* computer 1440 */
+@media (min-width: 1440px) {
+  .rent-form{
+    width: 1440px;
+  }
+  .rent-container{
+    max-width: 1340px;
+  }
+  .rent-image{
+    width: 768px;
+    height: 536px;
+   }
 }
