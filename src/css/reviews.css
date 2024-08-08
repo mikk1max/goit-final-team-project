@@ -1,12 +1,15 @@
 .sec-reviews{
     background-color: #0E1823;
-    padding-bottom: 80px;
+    min-width: 320px;
+    
+    
 }
 
 .container{
     margin: auto;
-    padding: 0 20px;
+    padding: 0 20px 80px;
     width: 335px;
+    
 }
 
 
@@ -16,6 +19,10 @@
 
 .third {
     display: none;
+}
+
+.sec-review-description{
+    margin-bottom: 40px;
 }
 
 .review-title{
@@ -28,6 +35,7 @@
 
     margin:0 auto 25px;
     width: 335px;
+    
    
 }
 
@@ -39,9 +47,9 @@
     text-align: center;
     color: #fbfbfb;
     opacity: 0.4;
-
-    margin:0 auto 25px;
+    
     width: 335px;
+    margin: 0 auto;
 
 }
 
@@ -59,6 +67,8 @@
     border-radius: 24px;
     padding: 32px 8px;
     max-width: 335px;
+    
+    
     margin: 0;
     background: #fbfbfb;
 }
@@ -95,6 +105,31 @@
     margin: 8px 8px 0 8px;
     
 }
+ 
+/* rubber  */
+@media screen and (max-width: 374px){
+    .container{
+        width: 280px;
+    }
+    .review-title {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .review-main-text {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
+    .review-name {
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 0.75rem;
+    }
+}
+
 
 /* media tablet */
 @media screen and (min-width: 768px){
@@ -172,6 +207,10 @@
    width: 376px;
    padding: 32px 28px;
  }
+
+ .review-text{
+    margin: 0;
+ }
 }
 
 /* media desktop */
@@ -184,6 +223,10 @@
     .review-item {
         width: 392px;
         padding: 32px 36px;
+    }
+
+    .review-list{
+        gap: 32px;
     }
 }
 
