@@ -22,8 +22,8 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 18px;
-min-width: 320px;
-max-width: 375px;
+min-width: 280px;
+max-width: 335px;
 background-color: transparent;
 margin-bottom: 40px;
 margin-top: 40px;
@@ -72,13 +72,7 @@ border: none;
 }
 
 
-/* @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-  .rent-image{
-    background-image: url(../img/rent-form-image2x.jpg);
-  }
-} */
+
  .rent-image{
   width: 335px;
   height: 412px;
@@ -97,17 +91,7 @@ border: none;
     margin-bottom: 50px;
     margin-top: 50px;
   }
-  /* .rent-image{
-    
-    background-image: url(../img/rent-form-image-tablet.jpg);
-  } */
-  /* @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-  .rent-image{
-    background-image: url(../img/rent-form-image-tablet2x.jpg);
-  }
-} */
+  
 .rent-image{
   width: 704px;
   height: 534px;
