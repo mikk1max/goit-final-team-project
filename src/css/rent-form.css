@@ -68,9 +68,14 @@ border: none;
   border-radius: 24px;
   max-width: 100%;
 }
-
+.rent-container-image {
+  margin-top: 80px;
+}
 /* tablet  */
 @media (min-width: 768px) {
+  .rent-container-image {
+  margin-top: 100px;
+  }
   .rent-button{
     padding: 18px 75px;
   }
@@ -99,6 +104,9 @@ border: none;
 }
 /* computer 1280 */
 @media (min-width: 1280px) {
+  .rent-container-image {
+    margin-top: 0px;
+    }
   .rent-form{
     width: 1280px;
   }
