@@ -18,6 +18,11 @@
     display: none;
 }
 
+.sec-reviews-descr{
+ margin-bottom: 40px;
+ width: 295px;
+}
+
 .review-title{
     font-weight: 500;
     font-size: 28px;
@@ -27,7 +32,7 @@
     color: #fbfbfb;
 
     margin:0 auto 25px;
-    width: 335px;
+    width:100%;
    
 }
 
@@ -40,8 +45,7 @@
     color: #fbfbfb;
     opacity: 0.4;
 
-    margin:0 auto 25px;
-    width: 335px;
+    width: 100%;
 
 }
 
@@ -66,7 +70,8 @@
 
 
 .review-img{
-   margin: 0 auto;
+    border-radius: 50%;
+   margin: 0 auto 24px;
    width: 56px;
    height: 56px;
    
@@ -80,7 +85,8 @@
     text-align: center;
     color: #040306;
 
-    margin-top: 24px;
+    margin-bottom: 8px;
+
 }
 
 .review-text{
@@ -91,9 +97,15 @@
     text-align: center;
     color: rgba(4, 3, 6, 0.4);
 
-
-    margin: 8px 8px 0 8px;
     
+
+
+    
+    
+}
+
+.review-info{
+margin: 0 8px;
 }
 
 /* media tablet */
@@ -106,14 +118,14 @@
 
     .review-title{
         font-size: 48px;
-        width: 704px;
+        
     }
 
     .review-main-text{
         font-size: 14px;
         line-height: 1.29;
-        width: 571px;
-        margin-bottom: 75px;
+       
+       margin: 0 auto;
     }
 
 
@@ -124,7 +136,7 @@
 
     .review-list{
         display: flex;
-        justify-content: space-between;
+        
         gap: 32px;
         
     }
@@ -137,6 +149,10 @@
     .sec-reviews{
         padding-bottom: 150px;
     }
+
+    .sec-reviews-descr {
+    width: 640px;
+    }
 }
 
 
@@ -144,7 +160,7 @@
 @media screen and (min-width: 1280px){
 
     .container{
-        width: 1180px;
+        min-width: 1180px;
         padding: 0 50px;
     }
  .third {
@@ -162,7 +178,7 @@
  }
 
  .review-list{
-    min-width: 1180px;
+    
     gap: 26px;
     
    
@@ -171,7 +187,17 @@
  .review-item{
    width: 376px;
    padding: 32px 28px;
+   
  }
+
+ .review-info {
+     margin: 0;
+ }
+
+  .sec-reviews-descr {
+      width: 854px;
+      margin: 0 auto 75px;
+  }
 }
 
 /* media desktop */
@@ -185,6 +211,12 @@
         width: 392px;
         padding: 32px 36px;
     }
+    .review-list {
+    
+        gap: 32px;
+    }
+
+
 }
 
 
