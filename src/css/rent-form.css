@@ -1,13 +1,12 @@
 .rent-form {
   padding: 80px 0;
-  background-color: #0e1823;
 }
 .rent-container{
-  /* max-width: 320px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .rent-title{
   font-weight: 500;
@@ -41,12 +40,6 @@ width: 100%;
 height: 42px;
 background-color: transparent;
 }
-/* .rent-input::placeholder {
-  padding-left: 18px;
-} */
-.rent-input::value {
-  padding-left: 18px;
-}
 .rent-area{
   font-weight: 400;
 font-size: 14px;
@@ -54,21 +47,15 @@ line-height: 1.28571;
 color: rgba(251, 251, 251, 0.4);
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
-  /* padding-left: 18px; */
-  padding-top: 14px;
+  padding: 14px 18px;
   width: 100%;
   height: 108px;
   background-color: transparent;
 }
-.rent-area::placeholder {
-  padding-left: 18px;
-}
 .rent-button{
-gap: 10px;
 border-radius: 15px;
 padding: 14px 44px;
 background: #1b414b;
-margin-bottom: 80px;
 text-transform: capitalize;
 font-weight: 500;
 line-height: 1.1;
@@ -84,13 +71,21 @@ border: none;
 
 /* tablet  */
 @media (min-width: 768px) {
+  .rent-button{
+    padding: 18px 75px;
+  }
+  .rent-title{
+  font-size: 48px;
+  }
   .rent-container {
-    width: 704px;
-    padding-bottom: 150px;
+    width: 744px;
+    margin: 0 auto;
+    padding: 0 32px;
   }
   .rent-form-container{
      padding-left: 148px;
     padding-right: 148px;
+    margin-bottom: 80px;
   }
   .rent-formular{
     margin-bottom: 50px;
@@ -120,6 +115,7 @@ border: none;
     padding: 0px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 80px;
   }
   /* .rent-image{
     background-image: url(../img/rent-form-image-laptop.jpg);
