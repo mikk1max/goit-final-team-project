@@ -7,7 +7,7 @@
     margin: auto;
     padding: 0 20px;
     min-width: 280px;
-    max-width: 335px;
+    max-width: 375px;
 }
 
 
@@ -33,7 +33,7 @@
     color: #fbfbfb;
 
     margin:0 auto 25px;
-    width:100%;
+    min-width: 280px;
    
 }
 
@@ -46,7 +46,7 @@
     color: #fbfbfb;
     opacity: 0.4;
 
-    width: 100%;
+    min-width: 280px;
 
 }
 
