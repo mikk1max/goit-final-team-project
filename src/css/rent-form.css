@@ -3,10 +3,18 @@
 }
 .rent-container{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  min-width: 320px;
+max-width: 375px;
+}
+.rent-form-container{
+  width: 100%;
+  margin-bottom: 80px;
 }
 .rent-title{
   font-weight: 500;
@@ -26,6 +34,7 @@ max-width: 335px;
 background-color: transparent;
 margin-bottom: 40px;
 margin-top: 40px;
+width: 100%;
 }
 .rent-input{
   font-weight: 400;
@@ -51,6 +60,7 @@ color: rgba(251, 251, 251, 0.4);
   width: 100%;
   height: 108px;
   background-color: transparent;
+  resize: none;
 }
 .rent-button{
 border-radius: 15px;
@@ -68,14 +78,10 @@ border: none;
   border-radius: 24px;
   max-width: 100%;
 }
-.rent-container-image {
-  margin-top: 80px;
-}
+
 /* tablet  */
 @media (min-width: 768px) {
-  .rent-container-image {
-  margin-top: 100px;
-  }
+  
   .rent-button{
     padding: 18px 75px;
   }
@@ -83,14 +89,14 @@ border: none;
   font-size: 48px;
   }
   .rent-container {
-    width: 744px;
+    max-width: 744px;
     margin: 0 auto;
     padding: 0 32px;
   }
   .rent-form-container{
      padding-left: 148px;
     padding-right: 148px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .rent-formular{
     margin-bottom: 50px;
@@ -111,31 +117,19 @@ border: none;
     width: 1280px;
   }
    .rent-container{
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     flex-flow: row-reverse;
-    padding: 0px 0px 150px;
-  }
-  .rent-container > div{
-    /* flex-grow: 1; */
+    justify-content: space-between;
   }
   .rent-form-container{
-    padding: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 80px;
+    width: 100%;
+    /* padding: 0px; */
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    margin-bottom: 0;
+    min-width: 472px;
   }
-  /* .rent-image{
-    background-image: url(../img/rent-form-image-laptop.jpg);
-  
-  } */
-  /* @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-  .rent-image{
-    background-image: url(../img/rent-form-image-laptop2x.jpg);
-  }
-} */
 .rent-image{
   width: 658px;
   height: 536px;
