@@ -111,7 +111,7 @@ border: none;
     width: 1280px;
   }
    .rent-container{
-    max-width: 1180px;
+    width: 1180px;
     display: flex;
     flex-flow: row-reverse;
     padding: 0px 0px 150px;
@@ -147,7 +147,7 @@ border: none;
     width: 1440px;
   }
   .rent-container{
-    max-width: 1340px;
+    width: 1340px;
   }
   .rent-image{
     width: 768px;
