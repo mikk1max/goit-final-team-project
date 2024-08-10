@@ -117,7 +117,7 @@ border: none;
     padding: 0px 0px 150px;
   }
   .rent-container > div{
-    flex-grow: 1;
+    /* flex-grow: 1; */
   }
   .rent-form-container{
     padding: 0px;
