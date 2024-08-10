@@ -2,7 +2,7 @@
 .header-container {
   position: absolute;
   max-width: 335px;
-  width: 90vw;
+  width: calc(100% - 40px);
   height: 42px;
   top: 20px;
   left: 50%;
@@ -15,7 +15,7 @@
   border: 1px solid #fbfbfb;
   border-radius: 8px;
   background-color: #fbfbfb;
-  padding: 4px 20px;
+  padding: 0 20px;
 }
 
 .header-logo {
@@ -46,9 +46,9 @@
 @media screen and (min-width: 768px) {
   .header-container {
     max-width: 704px;
-    width: 150vw;
     height: 48px;
     padding: 4px 28px;
+    top: 32px;
   }
 
   .header-logo {
