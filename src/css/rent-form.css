@@ -1,4 +1,6 @@
 .rent-form {
+  display: flex;
+  justify-content: center;
   padding: 80px 0;
 }
 .rent-container{
@@ -74,7 +76,6 @@ color: #fbfbfb;
 border: none;
 }
 .rent-image{
-  /* display: block; */
   border-radius: 24px;
   max-width: 100%;
 }
@@ -94,11 +95,11 @@ border: none;
     padding: 0 32px;
   }
   .rent-form-container{
-     padding-left: 148px;
-    padding-right: 148px;
     margin-bottom: 100px;
+    width: 473px;
   }
   .rent-formular{
+    min-width: 100%;
     margin-bottom: 50px;
     margin-top: 50px;
   }
@@ -107,26 +108,25 @@ border: none;
   width: 704px;
   height: 534px;
  }
+ .rent-input{
+  height: 54px;
+ }
 }
 /* computer 1280 */
 @media (min-width: 1280px) {
   .rent-container-image {
+    flex-shrink: 0;
     margin-top: 0px;
+    margin-right: 50px;
     }
-  .rent-form{
-    width: 1280px;
-  }
    .rent-container{
     max-width: 1180px;
     display: flex;
     flex-flow: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
   }
   .rent-form-container{
     width: 100%;
-    /* padding: 0px; */
-    /* margin-left: 50px;
-    margin-right: 50px; */
     margin-bottom: 0;
     min-width: 472px;
   }
