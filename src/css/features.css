@@ -19,7 +19,7 @@
   list-style-position: inside;
 }
 
-.features-p {
+.features-text {
   margin-top: 38px;
   font-size: 12px;
   line-height: 1.16667;
@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.features-p::before {
+.features-text::before {
   content: '';
   width: 100%;
   height: 2px;
@@ -72,7 +72,7 @@
   .features-item {
     width: calc((100% - 32px) / 2);
   }
-  .features-p {
+  .features-text {
     font-size: 13px;
     line-height: 1.15;
   }
