@@ -1,7 +1,6 @@
 /** ========= HEADER ========= */
 .header-container {
   position: absolute;
-  max-width: 335px;
   width: calc(100% - 40px);
   height: 42px;
   top: 20px;
@@ -43,9 +42,15 @@
   display: none;
 }
 
+@media screen and (min-width: 375px) {
+  .header-container {
+    width: 335px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 704px;
+    width: 704px;
     height: 48px;
     padding: 4px 28px;
     top: 32px;
@@ -60,21 +65,19 @@
   }
 
   .header-nav-list,
-  .header-soc,
-  .header-nav {
+  .header-soc {
     display: flex;
   }
 
   .header-nav-list {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     gap: 4px;
   }
 
   .header-nav-link {
+    display: block;
     border-radius: 8px;
     padding: 15px 25px;
+    height: 40px;
     background-color: rgba(27, 65, 75, 0.5);
     font-weight: 400;
     font-size: 9px;
@@ -112,14 +115,14 @@
 
 @media screen and (min-width: 1280px) {
   .header-container {
-    max-width: 1080px;
+    width: 1080px;
     padding: 4px 30px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .header-container {
-    max-width: 1240px;
+    width: 1240px;
   }
 }
 
