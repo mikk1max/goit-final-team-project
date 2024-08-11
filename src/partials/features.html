@@ -1,50 +1,64 @@
-<section class="sec-features">Features
-<div class="container container-features">
-   <h2 class="visually-hidden">Features</h2>>
-   <!--Liste Feature-->
-   <ul class="features-list">
-    <!--Liste Feature 1-->
-    <ol>
-    <li class="features-item">
-    <h3 class="features-subtitle">01</h3>
-  <p class="features-text">Swimming and water sports: try your hand at water skiing
-  </p>
-</li>
-</ol>
-  <!--Liste Feature 2-->
-  <ol>
-  <li class="features-item">
-    <h3 class="features-subtitle">02</h3>
-    <ol></ol>
-    <p class="features-text">Fishing: try to catch your own dinner
-    </p>
- </li>
-</ol>
-  <!--Liste Feature 3-->
-  <ol>
-  <li class="features-item">
-    <h3 class="features-subtitle">03</h3>
-    <ol></ol>
-    <p class="features-text">Sightseeing tours: take a shore or island tour, enjoy the views and sunsets from the water 
-    </p>
-  </li>
-  </ol>
-  <!--Liste Feature 4-->
-  <ol>
-  <li class="features-item">
-    <h3 class="features-subtitle">04</h3>
-    <p class="features-text">Rest and relaxation: read a book or listen to music while enjoying the outdoor atmosphere.
-    </p>
-  </li>
-  </ol>
-</div>
-
-<div class="card">
-  <img class="card-image"
-  srcset="./images/images-features-desk-1x.jpg, ./images/image-features-desk-2x.jpg"
-   alt="yacht terrace"
-   width="540"
-  height="424"
-  />   
-</div>
+<section id="features" class="features-section">
+  <div class="container features-container">
+    <div class="features-content">
+      <h2 class="visually-hidden">features</h2>
+      <ol class="features-list" type="1">
+        <li class="features-item">
+          <p class="features-p">
+            Swimming and water sports: try your hand at water skiing
+          </p>
+        </li>
+        <li class="features-item">
+          <p class="features">Fishing: try to catch your own dinner</p>
+        </li>
+        <li class="features-item">
+          <p class="features-p">
+            Sightseeing tours: take a shore or island tour, enjoy the views and
+            sunsets from the water
+          </p>
+        </li>
+        <li class="features-item">
+          <p class="features-p">
+            Rest and relaxation: read a book or listen to music while enjoying
+            the outdoor atmosphere.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <picture>
+      <source
+        srcset="
+          /img/advantages/desktop1440-1x.webp 1x,
+          /img/advantages/desktop1440-2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          /img/advantages/desktop1.webp 1x,
+          /img/advantages/desktop2.webp 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          /img/advantages/tablet1.webp 1x,
+          /img/advantages/tablet2.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/img/advantages/mob1.webp 1x, /img/advantages/mob2.webp 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        src="src/img/features/features-img.jpg"
+        alt="picture"
+        loading="lazy"
+        width="704"
+        height="424"
+        class="features-picture"
+      />
+    </picture>
+  </div>
 </section>
