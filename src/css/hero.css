@@ -2,12 +2,14 @@
   max-width: 375px;
   min-width: 320px;
   padding: 0 20px 0 20px;
+  margin: auto;
 }
 
 .sec-hero {
   max-width: 375px;
   min-width: 320px;
   padding: 260px 0 302px 0;
+  margin: auto;
   background-image: url(/img/hero/mobile/1x/hero-mob.jpg),
     linear-gradient(
       360deg,
@@ -35,7 +37,7 @@
 }
 
 .hero-title {
-  width: 100%;
+  max-width: 100%;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -116,6 +118,7 @@
   }
 
   .hero-text {
+    max-width: 597px;
     font-size: 16px;
     line-height: 1.4;
     text-align: center;
@@ -133,7 +136,7 @@
 @media screen and (min-width: 1280px) {
   .hero-container {
     max-width: 1001px;
-    padding: 0 139px 0 140px;
+    /* padding: 0 139px 0 140px; */
   }
   .sec-hero {
     min-width: 1280px;
@@ -167,7 +170,7 @@
 
 @media screen and (min-width: 1440px) {
   .hero-container {
-    padding: 0 220px 0 219px;
+    /* padding: 0 220px 0 219px; */
   }
   .sec-hero {
     min-width: 1440px;
