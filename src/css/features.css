@@ -57,8 +57,6 @@
 
 /* -------------MEDIA--------- */
 @media screen and (min-width: 768px) {
-  .features-section {
-  }
   .features-content {
     padding: 90px 32px;
     margin-bottom: 32px;
