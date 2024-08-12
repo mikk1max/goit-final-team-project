@@ -25,7 +25,7 @@
 
     
     <script type="module" crossorigin src="/goit-final-team-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-final-team-project/assets/index-a2acd08a.css">
+    <link rel="stylesheet" href="/goit-final-team-project/assets/index-d42a443e.css">
   </head>
   <body>
     <header>
@@ -316,55 +316,61 @@
         <a class="rent-btn" href="#rent">Yacht rental</a>
     </div>
 </section>
-      <section class="sec-features">Features
-<div class="container container-features">
-   <h2 class="visually-hidden">Features</h2>>
-   <!--Liste Feature-->
-   <ul class="features-list">
-    <!--Liste Feature 1-->
-    <ol>
-    <li class="features-item">
-    <h3 class="features-subtitle">01</h3>
-  <p class="features-text">Swimming and water sports: try your hand at water skiing
-  </p>
-</li>
-</ol>
-  <!--Liste Feature 2-->
-  <ol>
-  <li class="features-item">
-    <h3 class="features-subtitle">02</h3>
-    <ol></ol>
-    <p class="features-text">Fishing: try to catch your own dinner
-    </p>
- </li>
-</ol>
-  <!--Liste Feature 3-->
-  <ol>
-  <li class="features-item">
-    <h3 class="features-subtitle">03</h3>
-    <ol></ol>
-    <p class="features-text">Sightseeing tours: take a shore or island tour, enjoy the views and sunsets from the water 
-    </p>
-  </li>
-  </ol>
-  <!--Liste Feature 4-->
-  <ol>
-  <li class="features-item">
-    <h3 class="features-subtitle">04</h3>
-    <p class="features-text">Rest and relaxation: read a book or listen to music while enjoying the outdoor atmosphere.
-    </p>
-  </li>
-  </ol>
-</div>
-
-<div class="card">
-  <img class="card-image"
-  srcset="./images/images-features-desk-1x.jpg, ./images/image-features-desk-2x.jpg"
-   alt="yacht terrace"
-   width="540"
-  height="424"
-  />   
-</div>
+      <section id="features" class="features-section">
+  <div class="container features-container">
+    <div class="features-content">
+      <h2 class="visually-hidden">features</h2>
+      <ol class="features-list">
+        <li class="features-item">
+          <p class="features-text">
+            Swimming and water sports: try your hand at water skiing
+          </p>
+        </li>
+        <li class="features-item">
+          <p class="features-text">Fishing: try to catch your own dinner</p>
+        </li>
+        <li class="features-item">
+          <p class="features-text">
+            Sightseeing tours: take a shore or island tour, enjoy the views and
+            sunsets from the water
+          </p>
+        </li>
+        <li class="features-item">
+          <p class="features-text">
+            Rest and relaxation: read a book or listen to music while enjoying
+            the outdoor atmosphere.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <picture>
+      <!-- Desktop screen yachts terrace -->
+      <source
+        media="(min-width: 1440px)"
+        srcset="/goit-final-team-project/assets/features-desk-more-1x-d24f9da2.jpg 1x, /goit-final-team-project/assets/features-desk-more-2x-e7475d81.jpg 2x"
+      />
+      <!-- Small desktop screen  yacht terrace-->
+      <source
+        media="(min-width: 1280px) and (max-width: 1439px)"
+        srcset="/goit-final-team-project/assets/features-desk-1x-b8f73a01.jpg 1x, /goit-final-team-project/assets/features-desk-2x-54cad756.jpg 2x"
+      />
+      <!-- Tablet screen yacht terrace-->
+      <source
+        media="(min-width: 768px) and (max-width: 1279px)"
+        srcset="/goit-final-team-project/assets/features-tab-1x-c0034c1d.jpg 1x, /goit-final-team-project/assets/features-tab-2x-eb1a46f9.jpg 2x"
+      />
+      <!-- Mobile screen yacht terrace-->
+      <source
+        srcset="/goit-final-team-project/assets/features-mob-1x-9908e961.jpg 1x, /goit-final-team-project/assets/features-mob-2x-34526e13.jpg 2x"
+      />
+      <img
+        src="/goit-final-team-project/assets/features-mob-1x-9908e961.jpg"
+        alt="recreation area and feasting on the yacht"
+        loading="lazy"
+        class="features-picture"
+      />
+    </picture>
+  </div>
 </section>
 
       <section class="rent-form">
