@@ -25,11 +25,11 @@
 
     
     <script type="module" crossorigin src="/goit-final-team-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-final-team-project/assets/index-f7b98399.css">
+    <link rel="stylesheet" href="/goit-final-team-project/assets/index-cb6e2c24.css">
   </head>
   <body>
     <header>
-      <div class="header-container">
+      <div class="container header-container">
   <a class="header-logo" href="/index.html">yachtjet</a>
   <nav class="header-nav">
     <ul class="header-nav-list">
@@ -136,7 +136,7 @@
 
     <main>
       <section class="sec-hero">
-  <div class="hero-container">
+  <div class="container hero-container">
     <h1 class="hero-title">
       Explore the High Seas with Our Luxury Yacht Rentals
     </h1>
@@ -145,12 +145,12 @@
       from our top-of-the-line yachts and embark on an unforgettable journey
       surrounded by breathtaking views and state-of-the-art amenities.
     </p>
-    <button type="button" class="hero-btn" id="rent">Yacht rental</button>
+    <a href="#rent" type="button" class="hero-btn">Yacht rental</a>
   </div>
 </section>
 
       <section class="sec-about" id="about">
-  <div class="about-container">
+  <div class="container about-container">
     <div class="about-text-content">
       <h2 class="about-title">
         YachtJet fleet is here to take you on the ultimate adventure
@@ -198,124 +198,158 @@
 </section>
 
       <section class="sec-price-list section">
-    <div class="price-list-container">
-        <h2 class="section-title">Choose your dream yacht and sail away into the sunset</h2>
-        <ul class="yacht-card-list">
-            <li class="yacht-card">
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media='(min-width: 1440px)'
-                        srcset='/goit-final-team-project/assets/yaht141-64216eea.jpg 1x, /goit-final-team-project/assets/yaht1412x-e7b6686e.jpg 2x' />
-                    <!-- Small desktop screen -->
-                    <source media='(min-width: 1280px)'
-                        srcset='/goit-final-team-project/assets/yaht121-2a48e82e.jpg 1x, /goit-final-team-project/assets/yaht1212x-3d10a56b.jpg 2x' />
-                    <!-- Tablet screen -->
-                    <source media='(min-width: 768px)'
-                        srcset='/goit-final-team-project/assets/yahtt1-fa230571.jpg 1x, /goit-final-team-project/assets/yahtt12x-d7e57999.jpg 2x' />
-                    <!-- Mobile screen -->
-                    <source media='(max-width: 767px)'
-                        srcset='/goit-final-team-project/assets/yahtm-03499fe2.jpg 1x, /goit-final-team-project/assets/yahtm2x-f437b4b9.jpg 2x' />
-                    <img src='/goit-final-team-project/assets/yahtm-03499fe2.jpg' alt='Arrow' class="yacht-img" />
-                </picture>
-                <div class="card-text-wrapper">
-                    <div class="card-title-wrapper">
-                        <h3 class="yacht-card-title hid-text">Arrow</h3>
-                        <p class="yacht-type">LUXURY YAHTS</p>
-                    </div>
-                    <div class="params">
-                        <ul class="param-names">
-                            <li class="param-name-item">LENGTH</li>
-                            <li class="param-name-item">BUILDER</li>
-                            <li class="param-name-item">BUILT</li>
-                            <li class="param-name-item">GUESTS</li>
-                            <li class="param-name-item">PRICE</li>
-                        </ul>
-                        <ul class="param-values">
-                            <li class="param-value-item">48m(155ft)</li>
-                            <li class="param-value-item">Admiral</li>
-                            <li class="param-value-item">2021</li>
-                            <li class="param-value-item">11 in 5 cabins</li>
-                            <li class="param-value-item">€33,500,000</li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="yacht-card t-card">
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media='(min-width: 1440px)'
-                        srcset='/goit-final-team-project/assets/yaht142-6c1d4e05.jpg 1x, /goit-final-team-project/assets/yaht1422x-f976a89f.jpg 2x' />
-                    <!-- Small desktop screen -->
-                    <source media='(min-width: 1280px)'
-                        srcset='/goit-final-team-project/assets/yaht122-487c0948.jpg 1x, /goit-final-team-project/assets/yaht1222x-4228a24c.jpg 2x' />
-                    <!-- Tablet screen -->
-                    <source media='(min-width: 768px)'
-                        srcset='/goit-final-team-project/assets/yahtt2-37f8030b.jpg 1x, /goit-final-team-project/assets/yahtt22x-64cc2fb3.jpg 2x' />
-                    <img src='/goit-final-team-project/assets/yahtt2-37f8030b.jpg' alt='BENETTI OASIS 40M BO122
-                LUXURY YAHTS' class="yacht-img" />
-                </picture>
-                <div class="card-text-wrapper">
-                    <div class="card-title-wrapper">
-                        <h3 class="yacht-card-title hid-text">BENETTI OASIS 40M BO122
-                            LUXURY YAHTS</h3>
-                        <p class="yacht-type">LUXURY YAHTS</p>
-                    </div>
-                    <div class="params">
-                        <ul class="param-names">
-                            <li class="param-name-item">LENGTH</li>
-                            <li class="param-name-item">BUILDER</li>
-                            <li class="param-name-item">BUILT</li>
-                            <li class="param-name-item">GUESTS</li>
-                            <li class="param-name-item">PRICE</li>
-                        </ul>
-                        <ul class="param-values">
-                            <li class="param-value-item">41m (133ft)</li>
-                            <li class="param-value-item">Benetti</li>
-                            <li class="param-value-item">2025</li>
-                            <li class="param-value-item">10 in 5 cabins</li>
-                            <li class="param-value-item">€23,210,000</li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="yacht-card d-card">
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media='(min-width: 1440px)'
-                        srcset='/goit-final-team-project/assets/yaht143-a8685c7e.jpg 1x, /goit-final-team-project/assets/yaht1432x-92d7563a.jpg 2x' />
-                    <!-- Small desktop screen -->
-                    <source media='(min-width: 1280px)'
-                        srcset='/goit-final-team-project/assets/yaht123-52a9ee4c.jpg 1x, /goit-final-team-project/assets/yaht1232x-9653efe4.jpg 2x' />
-                    <!-- Tablet screen -->
-                    <img src='/goit-final-team-project/assets/yaht123-52a9ee4c.jpg' alt='Belle Anna' class="yacht-img d-img" />
-                </picture>
-                <div class="card-text-wrapper">
-                    <div class="card-title-wrapper">
-                        <h3 class="yacht-card-title hid-text">BELLE ANNA</h3>
-                        <p class="yacht-type">LUXURY YAHTS</p>
-                    </div>
-                    <div class="params">
-                        <ul class="param-names">
-                            <li class="param-name-item">LENGTH</li>
-                            <li class="param-name-item">BUILDER</li>
-                            <li class="param-name-item">BUILT</li>
-                            <li class="param-name-item">GUESTS</li>
-                            <li class="param-name-item">PRICE</li>
-                        </ul>
-                        <ul class="param-values">
-                            <li class="param-value-item">50m(155ft)</li>
-                            <li class="param-value-item">ISA</li>
-                            <li class="param-value-item">2012</li>
-                            <li class="param-value-item">12 in 6 cabins</li>
-                            <li class="param-value-item">€21,000,000</li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <a class="rent-btn" href="#rent">Yacht rental</a>
-    </div>
+  <div class="container price-list-container">
+    <h2 class="section-title" id="yachts">
+      Choose your dream yacht and sail away into the sunset
+    </h2>
+    <ul class="yacht-card-list">
+      <li class="yacht-card">
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1440px)"
+            srcset="/goit-final-team-project/assets/yaht141-64216eea.jpg 1x, /goit-final-team-project/assets/yaht1412x-e7b6686e.jpg 2x"
+          />
+          <!-- Small desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/goit-final-team-project/assets/yaht121-2a48e82e.jpg 1x, /goit-final-team-project/assets/yaht1212x-3d10a56b.jpg 2x"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/goit-final-team-project/assets/yahtt1-fa230571.jpg 1x, /goit-final-team-project/assets/yahtt12x-d7e57999.jpg 2x"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/goit-final-team-project/assets/yahtm-03499fe2.jpg 1x, /goit-final-team-project/assets/yahtm2x-f437b4b9.jpg 2x"
+          />
+          <img
+            src="/goit-final-team-project/assets/yahtm-03499fe2.jpg"
+            alt="Arrow"
+            class="yacht-img"
+          />
+        </picture>
+        <div class="card-text-wrapper">
+          <div class="card-title-wrapper">
+            <h3 class="yacht-card-title hid-text">Arrow</h3>
+            <p class="yacht-type">LUXURY YAHTS</p>
+          </div>
+          <div class="params">
+            <ul class="param-names">
+              <li class="param-name-item">LENGTH</li>
+              <li class="param-name-item">BUILDER</li>
+              <li class="param-name-item">BUILT</li>
+              <li class="param-name-item">GUESTS</li>
+              <li class="param-name-item">PRICE</li>
+            </ul>
+            <ul class="param-values">
+              <li class="param-value-item">48m(155ft)</li>
+              <li class="param-value-item">Admiral</li>
+              <li class="param-value-item">2021</li>
+              <li class="param-value-item">11 in 5 cabins</li>
+              <li class="param-value-item">€33,500,000</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="yacht-card t-card">
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1440px)"
+            srcset="/goit-final-team-project/assets/yaht142-6c1d4e05.jpg 1x, /goit-final-team-project/assets/yaht1422x-f976a89f.jpg 2x"
+          />
+          <!-- Small desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/goit-final-team-project/assets/yaht122-487c0948.jpg 1x, /goit-final-team-project/assets/yaht1222x-4228a24c.jpg 2x"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/goit-final-team-project/assets/yahtt2-37f8030b.jpg 1x, /goit-final-team-project/assets/yahtt22x-64cc2fb3.jpg 2x"
+          />
+          <img
+            src="/goit-final-team-project/assets/yahtt2-37f8030b.jpg"
+            alt="BENETTI OASIS 40M BO122
+                LUXURY YAHTS"
+            class="yacht-img"
+          />
+        </picture>
+        <div class="card-text-wrapper">
+          <div class="card-title-wrapper">
+            <h3 class="yacht-card-title hid-text">
+              BENETTI OASIS 40M BO122 LUXURY YAHTS
+            </h3>
+            <p class="yacht-type">LUXURY YAHTS</p>
+          </div>
+          <div class="params">
+            <ul class="param-names">
+              <li class="param-name-item">LENGTH</li>
+              <li class="param-name-item">BUILDER</li>
+              <li class="param-name-item">BUILT</li>
+              <li class="param-name-item">GUESTS</li>
+              <li class="param-name-item">PRICE</li>
+            </ul>
+            <ul class="param-values">
+              <li class="param-value-item">41m (133ft)</li>
+              <li class="param-value-item">Benetti</li>
+              <li class="param-value-item">2025</li>
+              <li class="param-value-item">10 in 5 cabins</li>
+              <li class="param-value-item">€23,210,000</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="yacht-card d-card">
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1440px)"
+            srcset="/goit-final-team-project/assets/yaht143-a8685c7e.jpg 1x, /goit-final-team-project/assets/yaht1432x-92d7563a.jpg 2x"
+          />
+          <!-- Small desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/goit-final-team-project/assets/yaht123-52a9ee4c.jpg 1x, /goit-final-team-project/assets/yaht1232x-9653efe4.jpg 2x"
+          />
+          <!-- Tablet screen -->
+          <img
+            src="/goit-final-team-project/assets/yaht123-52a9ee4c.jpg"
+            alt="Belle Anna"
+            class="yacht-img d-img"
+          />
+        </picture>
+        <div class="card-text-wrapper">
+          <div class="card-title-wrapper">
+            <h3 class="yacht-card-title hid-text">BELLE ANNA</h3>
+            <p class="yacht-type">LUXURY YAHTS</p>
+          </div>
+          <div class="params">
+            <ul class="param-names">
+              <li class="param-name-item">LENGTH</li>
+              <li class="param-name-item">BUILDER</li>
+              <li class="param-name-item">BUILT</li>
+              <li class="param-name-item">GUESTS</li>
+              <li class="param-name-item">PRICE</li>
+            </ul>
+            <ul class="param-values">
+              <li class="param-value-item">50m(155ft)</li>
+              <li class="param-value-item">ISA</li>
+              <li class="param-value-item">2012</li>
+              <li class="param-value-item">12 in 6 cabins</li>
+              <li class="param-value-item">€21,000,000</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a class="rent-btn" href="#rent">Yacht rental</a>
+  </div>
 </section>
+
       <section id="features" class="features-section">
   <div class="container features-container">
     <div class="features-content">
@@ -374,38 +408,74 @@
 </section>
 
       <section class="rent-form">
-    <div class="rent-container">
-        <div class="rent-form-container">
-            <h2 class="rent-title">Rent a yacht now</h2>
-            <form class="rent-formular">
-                <input class="rent-input" type="text" name="name" placeholder="Full name" required>
-                <input class="rent-input" type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email" required>
-                <input class="rent-input" type="number" pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$" placeholder="Phone number" required>
-                <textarea class="rent-area" name="" id="" placeholder="Comment"></textarea>
-            </form>
-            <button type="submit" class="rent-button">send</button>
-
-        </div>
-        
-        
-        <div class="rent-container-image">
-            <picture class="rent-images-group">
-                <source srcset="/goit-final-team-project/assets/pc2_1x-f9112c2b.jpg 1x, /goit-final-team-project/assets/pc2_2x-8058857d.jpg 2x" media="(min-width: 1439px)">
-                <source srcset="/goit-final-team-project/assets/pc1_1x-a6d53d42.jpg 1x, /goit-final-team-project/assets/pc1_2x-2ad87703.jpg 2x" media="(min-width: 1279px)">
-                <source srcset="/goit-final-team-project/assets/tablet_1x-2f0ebe1c.jpg 1x, /goit-final-team-project/assets/tablet_2x-88d4ac4c.jpg 2x" media="(min-width: 768px)">
-                <source srcset="/goit-final-team-project/assets/mobile_1x-dbd4a19e.jpg 1x, /goit-final-team-project/assets/mobile_2x-fb99ee3d.jpg 2x" media="(max-width: 767px)">
-                <img class="rent-image" src="/goit-final-team-project/assets/mobile_1x-dbd4a19e.jpg" alt="yacht" width="335" height="412">
-            </picture>
-        </div>
+  <div class="container rent-container">
+    <div class="rent-form-container">
+      <h2 class="rent-title" id="rent">Rent a yacht now</h2>
+      <form class="rent-formular">
+        <input
+          class="rent-input"
+          type="text"
+          name="name"
+          placeholder="Full name"
+          required
+        />
+        <input
+          class="rent-input"
+          type="email"
+          name="email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="rent-input"
+          type="number"
+          pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+          placeholder="Phone number"
+          required
+        />
+        <textarea
+          class="rent-area"
+          name=""
+          id=""
+          placeholder="Comment"
+        ></textarea>
+        <button type="submit" class="rent-button">send</button>
+      </form>
     </div>
-       
-    
+
+    <div class="rent-container-image">
+      <picture class="rent-images-group">
+        <source
+          srcset="/goit-final-team-project/assets/pc2_1x-f9112c2b.jpg 1x, /goit-final-team-project/assets/pc2_2x-8058857d.jpg 2x"
+          media="(min-width: 1439px)"
+        />
+        <source
+          srcset="/goit-final-team-project/assets/pc1_1x-a6d53d42.jpg 1x, /goit-final-team-project/assets/pc1_2x-2ad87703.jpg 2x"
+          media="(min-width: 1279px)"
+        />
+        <source
+          srcset="/goit-final-team-project/assets/tablet_1x-2f0ebe1c.jpg 1x, /goit-final-team-project/assets/tablet_2x-88d4ac4c.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/goit-final-team-project/assets/mobile_1x-dbd4a19e.jpg 1x, /goit-final-team-project/assets/mobile_2x-fb99ee3d.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="rent-image"
+          src="/goit-final-team-project/assets/mobile_1x-dbd4a19e.jpg"
+          alt="yacht"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
 
       <section class="sec-reviews">
-  <div class="container">
+  <div class="container reviews-container">
     <div class="sec-reviews-descr">
-      <h2 class="review-title">
+      <h2 class="review-title" id="reviews">
         YachtJet take pride in providing the best possible service and
         experience to our customers
       </h2>
@@ -472,14 +542,11 @@
     </main>
 
     <footer class="footer">
-  <div class=" footer-container">
+  <div class="footer-container">
     <div class="footer-nav-container">
+      <a href="./index.html" class="footer-logo">yachtjet</a>
       <nav class="footer-nav">
         <ul class="footer-nav-list">
-          <li class="footer-nav-title">
-            <a href="./index.html" class="footer-logo">yachtjet</a>
-          </li>
-
           <li class="footer-nav-item">
             <a class="footer-nav-link" href="#about">About</a>
           </li>
@@ -489,37 +556,41 @@
           <li class="footer-nav-item">
             <a class="footer-nav-link" href="#reviews">Reviews</a>
           </li>
-
         </ul>
       </nav>
-    </div>
+      <div class="footer-soc">
+        <ul class="footer-soc-list">
+          <li class="footer-soc-item">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="footer-soc-link"
+            >
+              <svg class="soc-icon" width="24" height="24">
+                <use href="/goit-final-team-project/assets/icons-bce7ada2.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
 
-    <div class="footer-soc">
-      <ul class="footer-soc-list">
-        <li class="footer-soc-item">
-          <a href="https://www.instagram.com/goitclub/" class="footer-soc-link">
-            <svg class="soc-icon" width="24" height="24">
-              <use href="/goit-final-team-project/assets/icons-bce7ada2.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
+          <li class="footer-soc-item">
+            <a href="https://www.youtube.com/c/GoIT" class="footer-soc-link">
+              <svg class="soc-icon" width="24" height="24">
+                <use href="/goit-final-team-project/assets/icons-bce7ada2.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="footer-soc-item">
-          <a href="https://www.youtube.com/c/GoIT" class="footer-soc-link">
-            <svg class="soc-icon" width="24" height="24">
-              <use href="/goit-final-team-project/assets/icons-bce7ada2.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="footer-soc-item">
-          <a href="https://www.facebook.com/goITclub/" class="footer-soc-link">
-            <svg class="soc-icon" width="24" height="24">
-              <use href="/goit-final-team-project/assets/icons-bce7ada2.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+          <li class="footer-soc-item">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="footer-soc-link"
+            >
+              <svg class="soc-icon" width="24" height="24">
+                <use href="/goit-final-team-project/assets/icons-bce7ada2.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <p class="footer-text">
@@ -533,6 +604,7 @@
     </div>
   </div>
 </footer>
+
 
     
   </body>
