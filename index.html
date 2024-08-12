@@ -25,7 +25,7 @@
 
     
     <script type="module" crossorigin src="/goit-final-team-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-final-team-project/assets/index-5ce76136.css">
+    <link rel="stylesheet" href="/goit-final-team-project/assets/index-206ceb0b.css">
   </head>
   <body>
     <header>
@@ -402,12 +402,13 @@
       <section class="rent-form">
   <div class="container rent-container">
     <div class="rent-form-container">
-      <h2 class="rent-title" id="rent">Rent a yacht now</h2>
+      <h2 class="rent-title">Rent a yacht now</h2>
       <form class="rent-formular">
         <input
           class="rent-input"
           type="text"
           name="name"
+          aria-label="Full name"
           placeholder="Full name"
           required
         />
@@ -416,20 +417,22 @@
           type="email"
           name="email"
           pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          aria-label="Email"
           placeholder="Email"
           required
         />
         <input
           class="rent-input"
-          type="number"
+          type="tel"
           pattern="^+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+          aria-label="Phone number"
           placeholder="Phone number"
           required
         />
         <textarea
           class="rent-area"
-          name=""
-          id=""
+          name="Comment"
+          aria-label="Comment"
           placeholder="Comment"
         ></textarea>
         <button type="submit" class="rent-button">send</button>
