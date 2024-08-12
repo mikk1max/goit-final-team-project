@@ -74,7 +74,8 @@
 .rent-image {
   border-radius: 24px;
 }
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -128,5 +129,6 @@ textarea:focus, input:focus{
 @media (min-width: 1440px) {
   .rent-form {
     width: 1440px;
+    margin: auto;
   }
 }
