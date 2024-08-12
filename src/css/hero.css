@@ -1,9 +1,15 @@
-.sec-hero * {
-  box-sizing: border-box;
+.hero-container {
+  max-width: 375px;
+  min-width: 320px;
+  padding: 0 20px 0 20px;
+  margin: auto;
 }
 
 .sec-hero {
-  padding: 260px 20px 302px 20px;
+  max-width: 375px;
+  min-width: 320px;
+  padding: 260px 0 302px 0;
+  margin: auto;
   background-image: url(/img/hero/mobile/1x/hero-mob.jpg),
     linear-gradient(
       360deg,
@@ -31,6 +37,7 @@
 }
 
 .hero-title {
+  max-width: 100%;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -41,6 +48,7 @@
 }
 
 .hero-text {
+  max-width: 100%;
   font-weight: 300;
   font-size: 12px;
   line-height: 1.17;
@@ -74,9 +82,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 704px;
+    padding: 0 32px 0 32px;
+  }
+
   .sec-hero {
-    width: 768px;
-    padding: 280px 32px 282px 32px;
+    min-width: 768px;
+    padding: 280px 0 282px 0;
     background-image: url(/img/hero/tablet/1x/hero-tab.jpg),
       linear-gradient(
         360deg,
@@ -103,8 +116,9 @@
     font-size: 70px;
     margin: 0 auto 24px auto;
   }
+
   .hero-text {
-    width: 597px;
+    max-width: 597px;
     font-size: 16px;
     line-height: 1.4;
     text-align: center;
@@ -120,9 +134,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-container {
+    max-width: 1001px;
+    /* padding: 0 139px 0 140px; */
+  }
   .sec-hero {
-    width: 1280px;
-    padding: 235px 139px 215px 140px;
+    min-width: 1280px;
+    padding: 235px 0 215px 0;
     background-image: url(/img/hero/desktop/1x/hero-des.jpg),
       linear-gradient(
         360deg,
@@ -151,9 +169,12 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero-container {
+    /* padding: 0 220px 0 219px; */
+  }
   .sec-hero {
-    width: 1440px;
-    padding: 235px 220px 215px 219px;
+    min-width: 1440px;
+    padding: 235px 0 215px 0;
     background-image: url(/img/hero/desktop/1x/hero-des-big.jpg),
       linear-gradient(
         360deg,
