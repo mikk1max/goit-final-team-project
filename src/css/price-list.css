@@ -50,10 +50,12 @@ html {
   padding: 16px;
   background-color: var(--white);
   flex-shrink: 0;
+  width: 100%;
 }
 .card-title-wrapper {
+  width: 100%;
   display: flex;
-  gap: 125px;
+  justify-content: space-between;
 }
 .card-text-wrapper {
   padding: 32px 16px;
@@ -108,13 +110,20 @@ html {
   opacity: 0.4;
 }
 .params {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   position: relative;
   width: 100%;
   margin-top: 2rem;
+  gap: 6px;
 }
-
+.param-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
 .params:before {
   position: absolute;
   content: '';
@@ -124,43 +133,23 @@ html {
   left: 0;
   top: -1rem;
 }
-.param-names {
+.param-name-item {
+  color: var(--black);
+}
+.param-name-item {
+  color: var(--grey);
   opacity: 0.4;
 }
-.param-name-item,
-.param-value-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--grey);
-}
-.param-values,
-.param-names {
-  display: grid;
-  gap: 6px;
-}
+
 .param-name-item,
 .yacht-type,
 .yacht-card-title {
   text-transform: uppercase;
 }
-.param-value-item {
-  color: var(--black);
-}
-@media (max-width: 374px) {
-  .yacht-card {
-    width: 100%;
-  }
-  .card-title-wrapper {
-    width: 100%;
-    justify-content: space-between;
-    gap: unset;
-  }
-}
+
 @media (min-width: 768px) {
-  .card-title-wrapper {
-    gap: 22px;
+  .yacht-card {
+    width: calc((100% - 32px) / 2);
   }
   .sec-price-list {
     padding: 150px 0;
@@ -194,8 +183,8 @@ html {
   }
 }
 @media (min-width: 1280px) {
-  .card-title-wrapper {
-    gap: 33px;
+  .yacht-card {
+    width: calc((100% - 24px * 2) / 3);
   }
   .yacht-card-title {
     width: 177px;
@@ -223,6 +212,10 @@ html {
   }
   .yacht-card-list {
     gap: 32px;
+  }
+
+  .yacht-card {
+    width: calc((100% - 32px * 2) / 3);
   }
   .price-list-container {
     max-width: 1240px;
