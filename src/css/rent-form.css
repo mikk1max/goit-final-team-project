@@ -3,59 +3,54 @@
   justify-content: center;
   padding: 80px 0;
 }
-.rent-container{
+.rent-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 320px;
-max-width: 375px;
 }
-.rent-form-container{
+.rent-form-container {
   width: 100%;
   margin-bottom: 80px;
 }
-.rent-title{
+.rent-title {
   font-weight: 500;
-font-size: 28px;
-line-height: 1;
-letter-spacing: -0.02em;
-color: #fbfbfb;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
 }
-.rent-formular{
+.rent-formular {
   display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 18px;
-min-width: 280px;
-max-width: 335px;
-background-color: transparent;
-margin-bottom: 40px;
-margin-top: 40px;
-width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 280px;
+  max-width: 335px;
+  background-color: transparent;
+  margin-top: 40px;
+  width: 100%;
 }
-.rent-input{
+.rent-input {
   font-weight: 400;
-font-size: 14px;
-line-height: 1.28571;
-color: rgba(251, 251, 251, 0.4);
-  
-border: 1px solid rgba(251, 251, 251, 0.2);
-border-radius: 12px;
-padding-left: 18px;
-width: 100%;
-height: 42px;
-background-color: transparent;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: rgba(251, 251, 251, 0.4);
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding-left: 18px;
+  width: 100%;
+  height: 42px;
+  background-color: transparent;
 }
-.rent-area{
+.rent-area {
   font-weight: 400;
-font-size: 14px;
-line-height: 1.28571;
-color: rgba(251, 251, 251, 0.4);
+  font-size: 14px;
+  line-height: 1.28571;
+  color: rgba(251, 251, 251, 0.4);
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
   padding: 14px 18px;
@@ -64,53 +59,49 @@ color: rgba(251, 251, 251, 0.4);
   background-color: transparent;
   resize: none;
 }
-.rent-button{
-border-radius: 15px;
-padding: 14px 44px;
-background: #1b414b;
-text-transform: capitalize;
-font-weight: 500;
-line-height: 1.1;
-letter-spacing: -0.02em;
-color: #fbfbfb;
-border: none;
+.rent-button {
+  border-radius: 15px;
+  padding: 14px 44px;
+  background: #1b414b;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border: none;
+  margin-top: 22px;
 }
-.rent-image{
+.rent-image {
   border-radius: 24px;
-  max-width: 100%;
 }
 
 /* tablet  */
 @media (min-width: 768px) {
-  
-  .rent-button{
+  .rent-form {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .rent-button {
     padding: 18px 75px;
+    margin-top: 32px;
   }
-  .rent-title{
-  font-size: 48px;
+  .rent-title {
+    font-size: 48px;
   }
-  .rent-container {
-    max-width: 744px;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
-  .rent-form-container{
+
+  .rent-form-container {
     margin-bottom: 100px;
     width: 473px;
   }
-  .rent-formular{
+  .rent-formular {
     min-width: 100%;
-    margin-bottom: 50px;
     margin-top: 50px;
   }
-  
-.rent-image{
-  width: 704px;
-  height: 534px;
- }
- .rent-input{
-  height: 54px;
- }
+
+  .rent-input {
+    height: 54px;
+  }
 }
 /* computer 1280 */
 @media (min-width: 1280px) {
@@ -118,33 +109,21 @@ border: none;
     flex-shrink: 0;
     margin-top: 0px;
     margin-right: 50px;
-    }
-   .rent-container{
-    max-width: 1180px;
+  }
+  .rent-container {
     display: flex;
     flex-flow: row-reverse;
     justify-content: center;
   }
-  .rent-form-container{
+  .rent-form-container {
     width: 100%;
     margin-bottom: 0;
     min-width: 472px;
   }
-.rent-image{
-  width: 658px;
-  height: 536px;
- }
 }
 /* computer 1440 */
 @media (min-width: 1440px) {
-  .rent-form{
+  .rent-form {
     width: 1440px;
   }
-  .rent-container{
-    width: 1340px;
-  }
-  .rent-image{
-    width: 768px;
-    height: 536px;
-   }
 }

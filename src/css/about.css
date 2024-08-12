@@ -1,13 +1,15 @@
 .sec-about {
   margin: -60px auto 0;
+  padding: 0 20px;
 }
 
 .about-container {
   margin: 0 auto;
   min-width: 280px;
   max-width: 335px;
+  padding: 0;
   border-radius: 24px;
-  background: #fbfbfb
+  background: #fbfbfb;
 }
 
 .about-text-content {
@@ -19,12 +21,12 @@
 
 .about-title {
   max-width: 295px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #1b414b;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1b414b;
 }
 
 .about-subtitle-text {
@@ -32,31 +34,29 @@
   flex-direction: column;
   gap: 20px;
   max-width: 295px;
-  
 }
 
 .about-subtitle {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #1b414b;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1b414b;
 }
 
 .about-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #040306;
-    opacity: 0.4;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #040306;
+  opacity: 0.4;
 }
 
 .img-yachtjet {
   border-radius: 24px;
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -64,32 +64,32 @@
     margin: -67px auto 0;
   }
 
-    .about-container {
-      max-width: 704px;
-    }
+  .about-container {
+    max-width: 704px;
+  }
 
-    .about-title {
-      font-size: 48px;
-      max-width: 536px;
-    }
+  .about-title {
+    font-size: 48px;
+    max-width: 536px;
+  }
 
-    .about-text-content {
-      padding: 50px 32px;
-      gap: 50px;
-    }
+  .about-text-content {
+    padding: 50px 32px;
+    gap: 50px;
+  }
 
-    .about-subtitle-text {
-      max-width: 389px;
-    }
+  .about-subtitle-text {
+    max-width: 389px;
+  }
 
-    .about-subtitle {
-      font-size: 23px;
-    }
+  .about-subtitle {
+    font-size: 23px;
+  }
 
-    .about-text {
-      font-size: 13px;
-      line-height: 1.15;
-    }
+  .about-text {
+    font-size: 13px;
+    line-height: 1.15;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -97,28 +97,28 @@
     margin: -35px auto 0;
   }
 
-    .about-container {
-      max-width: 1180px;
-    }
+  .about-container {
+    max-width: 1180px;
+  }
 
-    .about-text-content {
-      padding: 50px;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 0;
-    }
+  .about-text-content {
+    padding: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
 
-    .about-title {
-      max-width: 537px;
-    }
+  .about-title {
+    max-width: 537px;
+  }
 
-        .about-subtitle-text {
-          max-width: 354px;
-        }
+  .about-subtitle-text {
+    max-width: 354px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-.about-container {
+  .about-container {
     max-width: 1340px;
   }
 
@@ -126,7 +126,3 @@
     max-width: 404px;
   }
 }
-
-
-
-

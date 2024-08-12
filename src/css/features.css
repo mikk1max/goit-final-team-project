@@ -1,8 +1,8 @@
 /* -------------FEATURES----------- */
 
 .features-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .features-content {
@@ -58,8 +58,6 @@
 /* -------------MEDIA--------- */
 @media screen and (min-width: 768px) {
   .features-section {
-    padding-top: 75px;
-    padding-bottom: 75px;
   }
   .features-content {
     padding: 90px 32px;
