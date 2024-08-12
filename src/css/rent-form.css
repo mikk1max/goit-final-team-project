@@ -1,13 +1,22 @@
 .rent-form {
+  display: flex;
+  justify-content: center;
   padding: 80px 0;
-  background-color: #242424;
 }
 .rent-container{
-  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 320px;
+max-width: 375px;
+}
+.rent-form-container{
+  width: 100%;
+  margin-bottom: 80px;
 }
 .rent-title{
   font-weight: 500;
@@ -22,42 +31,43 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 18px;
-min-width: 320px;
-max-width: 375px;
+min-width: 280px;
+max-width: 335px;
 background-color: transparent;
 margin-bottom: 40px;
 margin-top: 40px;
+width: 100%;
 }
 .rent-input{
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.28571;
+color: rgba(251, 251, 251, 0.4);
   
 border: 1px solid rgba(251, 251, 251, 0.2);
 border-radius: 12px;
-/* padding-left: 18px; */
+padding-left: 18px;
 width: 100%;
 height: 42px;
 background-color: transparent;
 }
-.rent-input::placeholder {
-  padding-left: 18px;
-}
 .rent-area{
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.28571;
+color: rgba(251, 251, 251, 0.4);
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
-  /* padding-left: 18px; */
-  padding-top: 14px;
+  padding: 14px 18px;
   width: 100%;
   height: 108px;
   background-color: transparent;
-}
-.rent-area::placeholder {
-  padding-left: 18px;
+  resize: none;
 }
 .rent-button{
-gap: 10px;
 border-radius: 15px;
 padding: 14px 44px;
 background: #1b414b;
-margin-bottom: 80px;
 text-transform: capitalize;
 font-weight: 500;
 line-height: 1.1;
@@ -66,83 +76,60 @@ color: #fbfbfb;
 border: none;
 }
 .rent-image{
-  /* display: block; */
   border-radius: 24px;
   max-width: 100%;
 }
 
-
-/* @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-  .rent-image{
-    background-image: url(../img/rent-form-image2x.jpg);
-  }
-} */
- .rent-image{
-  width: 335px;
-  height: 412px;
- }
 /* tablet  */
 @media (min-width: 768px) {
+  
+  .rent-button{
+    padding: 18px 75px;
+  }
+  .rent-title{
+  font-size: 48px;
+  }
   .rent-container {
-    max-width: 704px;
-    padding-bottom: 150px;
+    max-width: 744px;
+    margin: 0 auto;
+    padding: 0 32px;
   }
   .rent-form-container{
-     padding-left: 148px;
-    padding-right: 148px;
+    margin-bottom: 100px;
+    width: 473px;
   }
   .rent-formular{
+    min-width: 100%;
     margin-bottom: 50px;
     margin-top: 50px;
   }
-  /* .rent-image{
-    
-    background-image: url(../img/rent-form-image-tablet.jpg);
-  } */
-  /* @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-  .rent-image{
-    background-image: url(../img/rent-form-image-tablet2x.jpg);
-  }
-} */
+  
 .rent-image{
   width: 704px;
   height: 534px;
  }
+ .rent-input{
+  height: 54px;
+ }
 }
 /* computer 1280 */
 @media (min-width: 1280px) {
-  .rent-form{
-    width: 1280px;
-  }
+  .rent-container-image {
+    flex-shrink: 0;
+    margin-top: 0px;
+    margin-right: 50px;
+    }
    .rent-container{
     max-width: 1180px;
     display: flex;
     flex-flow: row-reverse;
-    padding: 0px 0px 150px;
-  }
-  .rent-container > div{
-    flex-grow: 1;
+    justify-content: center;
   }
   .rent-form-container{
-    padding: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
+    margin-bottom: 0;
+    min-width: 472px;
   }
-  /* .rent-image{
-    background-image: url(../img/rent-form-image-laptop.jpg);
-  
-  } */
-  /* @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-  .rent-image{
-    background-image: url(../img/rent-form-image-laptop2x.jpg);
-  }
-} */
 .rent-image{
   width: 658px;
   height: 536px;
@@ -154,7 +141,7 @@ border: none;
     width: 1440px;
   }
   .rent-container{
-    max-width: 1340px;
+    width: 1340px;
   }
   .rent-image{
     width: 768px;
