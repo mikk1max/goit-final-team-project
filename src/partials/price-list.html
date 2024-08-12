@@ -1,117 +1,158 @@
 <section class="sec-price-list section">
-    <h2 class="section-title">Choose your dream yacht and sail away into the sunset</h2>
-    <ul class="yacht-card-list">
-        <li class="yacht-card">
-            <picture>
-                <!-- Desktop screen -->
-                <source media='(min-width: 1440px)'
-                    srcset='./img/price-list/yaht141.jpg 1x, ./img/price-list/yaht1412x.jpg 2x' />
-                <!-- Small desktop screen -->
-                <source media='(min-width: 1280px)'
-                    srcset='./img/price-list/yaht121.jpg 1x, ./img/price-list/yaht1212x.jpg 2x' />
-                <!-- Tablet screen -->
-                <source media='(min-width: 768px)'
-                    srcset='./img/price-list/yahtt1.jpg 1x, ./img/price-list/yahtt12x.jpg 2x' />
-                <!-- Mobile screen -->
-                <source media='(max-width: 767px)'
-                    srcset='./img/price-list/yahtm.jpg 1x, ./img/price-list/yahtm2x.jpg 2x' />
-                <img src='./img/price-list/yahtm.jpg' alt='Arrow' class="yacht-img" />
-            </picture>
-            <div class="card-text-wrapper">
-                <div class="card-title-wrapper">
-                    <h3 class="yacht-card-title hid-text">Arrow</h3>
-                    <p class="yacht-type">LUXURY YAHTS</p>
-                </div>
-                <div class="params">
-                    <ul class="param-names">
-                        <li class="param-name-item">LENGTH</li>
-                        <li class="param-name-item">BUILDER</li>
-                        <li class="param-name-item">BUILT</li>
-                        <li class="param-name-item">GUESTS</li>
-                        <li class="param-name-item">PRICE</li>
-                    </ul>
-                    <ul class="param-values">
-                        <li class="param-value-item">48m(155ft)</li>
-                        <li class="param-value-item">Admiral</li>
-                        <li class="param-value-item">2021</li>
-                        <li class="param-value-item">11 in 5 cabins</li>
-                        <li class="param-value-item">€33,500,000</li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-        <li class="yacht-card t-card">
-            <picture>
-                <!-- Desktop screen -->
-                <source media='(min-width: 1440px)'
-                    srcset='./img/price-list/yaht142.jpg 1x, ./img/price-list/yaht1422x.jpg 2x' />
-                <!-- Small desktop screen -->
-                <source media='(min-width: 1280px)'
-                    srcset='./img/price-list/yaht122.jpg 1x, ./img/price-list/yaht1222x.jpg 2x' />
-                <!-- Tablet screen -->
-                <source media='(min-width: 768px)'
-                    srcset='./img/price-list/yahtt2.jpg 1x, ./img/price-list/yahtt22x.jpg 2x' />
-                <img src='./img/price-list/yahtt2.jpg' alt='BENETTI OASIS 40M BO122
-                LUXURY YAHTS' class="yacht-img" />
-            </picture>
-            <div class="card-text-wrapper">
-                <div class="card-title-wrapper">
-                    <h3 class="yacht-card-title hid-text">BENETTI OASIS 40M BO122
-                        LUXURY YAHTS</h3>
-                    <p class="yacht-type">LUXURY YAHTS</p>
-                </div>
-                <div class="params">
-                    <ul class="param-names">
-                        <li class="param-name-item">LENGTH</li>
-                        <li class="param-name-item">BUILDER</li>
-                        <li class="param-name-item">BUILT</li>
-                        <li class="param-name-item">GUESTS</li>
-                        <li class="param-name-item">PRICE</li>
-                    </ul>
-                    <ul class="param-values">
-                        <li class="param-value-item">41m (133ft)</li>
-                        <li class="param-value-item">Benetti</li>
-                        <li class="param-value-item">2025</li>
-                        <li class="param-value-item">10 in 5 cabins</li>
-                        <li class="param-value-item">€23,210,000</li>
+    <div class="container price-list-container">
+        <h2 class="section-title" id="yachts">
+            Choose your dream yacht and sail away into the sunset
+        </h2>
+        <ul class="yacht-card-list">
+            <li class="yacht-card">
+                <picture>
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1440px)" srcset="
+              ./img/price-list/desktop/1x/yaht141.jpg   1x,
+              ./img/price-list/desktop/2x/yaht1412x.jpg 2x
+            " />
+                    <!-- Small desktop screen -->
+                    <source media="(min-width: 1280px)" srcset="
+              ./img/price-list/desktop/1x/yaht121.jpg   1x,
+              ./img/price-list/desktop/2x/yaht1212x.jpg 2x
+            " />
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="
+              ./img/price-list/tablet/1x/yahtt1.jpg   1x,
+              ./img/price-list/tablet/2x/yahtt12x.jpg 2x
+            " />
+                    <!-- Mobile screen -->
+                    <source media="(max-width: 767px)" srcset="
+              ./img/price-list/mobile/1x/yahtm.jpg   1x,
+              ./img/price-list/mobile/2x/yahtm2x.jpg 2x
+            " />
+                    <img src="./img/price-list/mobile/1x/yahtm.jpg" alt="Arrow" class="yacht-img" />
+                </picture>
+                <div class="card-text-wrapper">
+                    <div class="card-title-wrapper">
+                        <h3 class="yacht-card-title hid-text">Arrow</h3>
+                        <p class="yacht-type">LUXURY YAHTS</p>
+                    </div>
+                    <ul class="params">
+                        <li class="param-item">
+                            <p class="param-name-item">LENGTH</p>
+                            <p class="param-value-item">48m(155ft)</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">BUILDER</p>
+                            <p class="param-value-item">Admiral</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">BUILT</p>
+                            <p class="param-value-item">2021</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">GUESTS</p>
+                            <p class="param-value-item">11 in 5 cabins</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">PRICE</p>
+                            <p class="param-value-item">€33,500,000</p>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </li>
-        <li class="yacht-card d-card">
-            <picture>
-                <!-- Desktop screen -->
-                <source media='(min-width: 1440px)'
-                    srcset='./img/price-list/yaht143.jpg 1x, ./img/price-list/yaht1432x.jpg 2x' />
-                <!-- Small desktop screen -->
-                <source media='(min-width: 1280px)'
-                    srcset='./img/price-list/yaht123.jpg 1x, ./img/price-list/yaht1232x.jpg 2x' />
-                <!-- Tablet screen -->
-                <img src='./img/price-list/yaht123.jpg' alt='Belle Anna' class="yacht-img d-img" />
-            </picture>
-            <div class="card-text-wrapper">
-                <div class="card-title-wrapper">
-                    <h3 class="yacht-card-title hid-text">BELLE ANNA</h3>
-                    <p class="yacht-type">LUXURY YAHTS</p>
-                </div>
-                <div class="params">
-                    <ul class="param-names">
-                        <li class="param-name-item">LENGTH</li>
-                        <li class="param-name-item">BUILDER</li>
-                        <li class="param-name-item">BUILT</li>
-                        <li class="param-name-item">GUESTS</li>
-                        <li class="param-name-item">PRICE</li>
+            </li>
+            <li class="yacht-card t-card">
+                <picture>
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1440px)" srcset="
+              ./img/price-list/desktop/1x/yaht142.jpg   1x,
+              ./img/price-list/desktop/2x/yaht1422x.jpg 2x
+            " />
+                    <!-- Small desktop screen -->
+                    <source media="(min-width: 1280px)" srcset="
+              ./img/price-list/desktop/1x/yaht122.jpg   1x,
+              ./img/price-list/desktop/2x/yaht1222x.jpg 2x
+            " />
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="
+              ./img/price-list/tablet/1x/yahtt2.jpg   1x,
+              ./img/price-list/tablet/2x/yahtt22x.jpg 2x
+            " />
+                    <img src="./img/price-list/tablet/1x/yahtt2.jpg" alt="BENETTI OASIS 40M BO122
+                LUXURY YAHTS" class="yacht-img" />
+                </picture>
+                <div class="card-text-wrapper">
+                    <div class="card-title-wrapper">
+                        <h3 class="yacht-card-title hid-text">
+                            BENETTI OASIS 40M BO122 LUXURY YAHTS
+                        </h3>
+                        <p class="yacht-type">LUXURY YAHTS</p>
+                    </div>
+                    <ul class="params">
+                        <li class="param-item">
+                            <p class="param-name-item">LENGTH</p>
+                            <p class="param-value-item">41m (133ft)</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">BUILDER</p>
+                            <p class="param-value-item">Benetti</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">BUILT</p>
+                            <p class="param-value-item">2025</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">GUESTS</p>
+                            <p class="param-value-item">10 in 5 cabins</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">PRICE</p>
+                            <p class="param-value-item">€23,210,000</p>
+                        </li>
                     </ul>
-                    <ul class="param-values">
-                        <li class="param-value-item">50m(155ft)</li>
-                        <li class="param-value-item">ISA</li>
-                        <li class="param-value-item">2012</li>
-                        <li class="param-value-item">12 in 6 cabins</li>
-                        <li class="param-value-item">€21,000,000</li>
+                </div>
+            </li>
+            <li class="yacht-card d-card">
+                <picture>
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1440px)" srcset="
+              ./img/price-list/desktop/1x/yaht143.jpg   1x,
+              ./img/price-list/desktop/2x/yaht1432x.jpg 2x
+            " />
+                    <!-- Small desktop screen -->
+                    <source media="(min-width: 1280px)" srcset="
+              ./img/price-list/desktop/1x/yaht123.jpg   1x,
+              ./img/price-list/desktop/2x/yaht1232x.jpg 2x
+            " />
+                    <!-- Tablet screen -->
+                    <img src="./img/price-list/desktop/1x/yaht123.jpg" alt="Belle Anna" class="yacht-img d-img" />
+                </picture>
+                <div class="card-text-wrapper">
+                    <div class="card-title-wrapper">
+                        <h3 class="yacht-card-title hid-text">BELLE ANNA</h3>
+                        <p class="yacht-type">LUXURY YAHTS</p>
+                    </div>
+                    <ul class="params">
+                        <li class="param-item">
+                            <p class="param-name-item">LENGTH</p>
+                            <p class="param-value-item">50m(155ft)</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">BUILDER</p>
+                            <p class="param-value-item">ISA</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">BUILT</p>
+                            <p class="param-value-item">2012</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">GUESTS</p>
+                            <p class="param-value-item">12 in 6 cabins</p>
+                        </li>
+                        <li class="param-item">
+                            <p class="param-name-item">PRICE</p>
+                            <p class="param-value-item">€21,000,000</p>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </li>
-    </ul>
-    <a class="rent-btn" href="#rent">Yacht rental</a>
+            </li>
+        </ul>
+        <a class="rent-btn" href="#rent">Yacht rental</a>
+    </div>
 </section>

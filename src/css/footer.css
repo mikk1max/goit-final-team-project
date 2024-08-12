@@ -1,149 +1,203 @@
-/* Основний стиль футера */
-footer {
-    background-color: rgba(27, 65, 75, 1);
-    /* Темний зелено-синій фон */
-    color: rgba(251, 251, 251, 1);
-    /* Білий колір тексту */
-    padding: 24px 0;
-    /* Внутрішні відступи зверху та знизу */
-    text-align: center;
-    /* Вирівнювання тексту по центру */
+.footer {
+  padding: 0 10px;
 }
 
-/* Контейнер для всіх елементів футера */
 .footer-container {
-    max-width: 1390px;
-    /* Ширина футера */
-    margin: 0 auto;
-    /* Центрування футера */
-    padding: 24px;
-    /* Внутрішні відступи */
-    border-radius: 24px 24px 0 0;
-    /* Закруглені кути */
+  background: rgba(27, 65, 75, 1);
+  border-radius: 24px 24px 0 0;
+  max-width: 355px;
+  padding: 40px 30px 20px;
+  margin: auto;
 }
 
-/* Логотип футера */
+.footer-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-logo {
-    font-size: 24px;
-    /* Розмір шрифту для логотипу */
-    font-weight: 500;
-    /* Жирність шрифту для логотипу */
-    color: rgba(251, 251, 251, 1);
-    /* Білий колір тексту */
-    text-decoration: none;
-    /* Без підкреслення */
-    display: block;
-    /* Відображення як блок */
-    margin-bottom: 24px;
-    /* Відступ знизу */
+  width: 52px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #fbfbfb;
+  display: block;
 }
 
-/* Навігаційне меню футера */
 .footer-nav {
-    list-style: none;
-    /* Відсутність маркерів у списку */
-    padding: 0;
-    /* Відсутність внутрішніх відступів */
-    margin: 0 0 24px;
-    /* Відступи зверху і знизу */
-    display: flex;
-    /* Відображення списку у рядок */
-    justify-content: center;
-    /* Вирівнювання по центру */
-    gap: 24px;
-    /* Відстань між елементами */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-left: auto;
 }
 
-/* Посилання в навігаційному меню */
-.footer-nav a {
-    color: rgba(251, 251, 251, 1);
-    /* Білий колір тексту */
-    text-decoration: none;
-    /* Без підкреслення */
-    font-size: 16px;
-    /* Розмір шрифту */
-    padding: 10px 20px;
-    /* Внутрішні відступи */
+.footer-nav-list {
+  display: flex;
+  gap: 4px;
 }
 
-.footer-nav a:hover {
-    text-decoration: underline;
-    /* Підкреслення при наведенні */
+.footer-nav-link {
+  border-radius: 8px;
+  width: 66px;
+  background-color: rgba(251, 251, 251, 0.3);
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  display: block;
+  padding: 15px 12px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Слоган футера */
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+.footer-soc {
+  margin: 80px auto 40px;
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.footer-soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soc-icon {
+  fill: #fbfbfb;
+  width: 24px;
+  height: 24px;
+}
+
+.soc-icon:hover,
+.soc-icon:focus {
+  fill: rgba(251, 251, 251, 0.8);
+}
+
 .footer-text {
-    width: 699px;
-    /* Ширина блоку */
-    height: 96px;
-    /* Висота блоку */
-    margin: 0 auto;
-    /* Центрування блоку */
-    padding: 0;
-    /* Внутрішні відступи */
-    text-align: center;
-    /* Вирівнювання тексту по центру */
-    opacity: 1;
-    /* Видимість блоку */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  max-width: 279px;
+  margin: auto;
 }
 
-.footer-text p {
-    margin: 0;
-    /* Відсутність відступів */
-    line-height: 32px;
-    /* Висота рядка */
-    font-size: 32px;
-    /* Розмір шрифту */
-    font-family: Inter, sans-serif;
-    /* Шрифт */
-    font-weight: 400;
-    /* Товщина шрифту */
-    letter-spacing: -0.02em;
-    /* Відстань між літерами */
-    color: rgba(251, 251, 251, 1);
-    /* Білий колір тексту */
+.privacy {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 82px;
 }
 
-/* Соціальні іконки */
-.footer-social {
-    list-style: none;
-    /* Відсутність маркерів у списку */
-    padding: 0;
-    /* Відсутність внутрішніх відступів */
-    margin: 24px 0;
-    /* Відступи зверху та знизу */
+.privacy-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 0 16px;
+  }
+
+  .footer-container {
+    max-width: 736px;
+    padding-top: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .footer-logo {
+    width: 74px;
+    font-size: 20px;
+  }
+
+  .footer-container-tab {
     display: flex;
-    /* Відображення списку у рядок */
-    justify-content: center;
-    /* Вирівнювання по центру */
-    gap: 16px;
-    /* Відстань між елементами */
-}
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+  }
 
-.footer-social a {
-    display: block;
-    /* Відображення як блок */
-}
+  .footer-nav {
+    margin-right: auto;
+  }
 
-.footer-social svg {
-    width: 24px;
-    /* Ширина іконок */
-    height: 24px;
-    /* Висота іконок */
-    fill: rgba(251, 251, 251, 1);
-    /* Білий колір іконок */
-}
+  .footer-soc {
+    margin: 0;
+  }
 
-/* Нижня частина футера */
-.footer-bottom {
-    background-color: rgba(27, 65, 75, 1);
-    /* Темний зелено-синій фон */
-    color: rgba(251, 251, 251, 0.4);
-    /* Напівпрозорий білий колір тексту */
-    padding: 10px 0;
-    /* Внутрішні відступи зверху та знизу */
+  .footer-soc-list {
+    margin: 0;
+  }
+
+  .footer-nav-link {
+    width: 91px;
+    padding: 15px 25px;
+  }
+
+  .footer-text {
+    font-size: 32px;
+    max-width: 640px;
+    margin-top: 96px;
+  }
+
+  .privacy {
+    gap: 32px;
+    margin-top: 99px;
+  }
+
+  .privacy-text {
     font-size: 14px;
-    /* Розмір шрифту */
-    margin-top: auto;
-    /* Відступ зверху для автоматичного позиціювання */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 25px;
+  }
+
+  .footer-container {
+    max-width: 1230px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .footer-nav {
+    gap: 326px;
+  }
+
+  .footer-text {
+    max-width: 693px;
+    margin: 96px auto 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    max-width: 1390px;
+  }
+
+  .footer-nav {
+    gap: 409px;
+  }
 }
