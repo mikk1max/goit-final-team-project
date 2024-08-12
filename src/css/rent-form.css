@@ -130,5 +130,10 @@ input:focus {
   .rent-form {
     width: 1440px;
     margin: auto;
+    justify-content: flex-start;
+  }
+
+  .rent-container {
+    margin: 0;
   }
 }
