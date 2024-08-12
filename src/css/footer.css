@@ -38,7 +38,7 @@
 
 .footer-nav-link {
   border-radius: 8px;
-  width: 66px;
+  min-width: 66px;
   background-color: rgba(251, 251, 251, 0.3);
   font-weight: 400;
   font-size: 9px;
@@ -151,7 +151,7 @@
   }
 
   .footer-nav-link {
-    width: 91px;
+    min-width: 91px;
     padding: 15px 25px;
   }
 
