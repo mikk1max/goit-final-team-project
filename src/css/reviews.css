@@ -6,7 +6,8 @@
 .container{
     margin: auto;
     padding: 0 20px;
-    width: 335px;
+    min-width: 280px;
+    max-width: 375px;
 }
 
 
@@ -18,6 +19,11 @@
     display: none;
 }
 
+.sec-reviews-descr{
+ margin-bottom: 40px;
+ min-width: 280px;
+}
+
 .review-title{
     font-weight: 500;
     font-size: 28px;
@@ -27,7 +33,7 @@
     color: #fbfbfb;
 
     margin:0 auto 25px;
-    width: 335px;
+    min-width: 280px;
    
 }
 
@@ -40,8 +46,7 @@
     color: #fbfbfb;
     opacity: 0.4;
 
-    margin:0 auto 25px;
-    width: 335px;
+    min-width: 280px;
 
 }
 
@@ -57,7 +62,7 @@
 
 .review-item{
     border-radius: 24px;
-    padding: 32px 8px;
+    padding: 32px 16px;
     max-width: 335px;
     margin: 0;
     background: #fbfbfb;
@@ -66,7 +71,8 @@
 
 
 .review-img{
-   margin: 0 auto;
+    border-radius: 50%;
+   margin: 0 auto 24px;
    width: 56px;
    height: 56px;
    
@@ -80,7 +86,8 @@
     text-align: center;
     color: #040306;
 
-    margin-top: 24px;
+    margin-bottom: 8px;
+
 }
 
 .review-text{
@@ -91,29 +98,35 @@
     text-align: center;
     color: rgba(4, 3, 6, 0.4);
 
-
-    margin: 8px 8px 0 8px;
     
+
+
+    
+    
+}
+
+.review-info{
+margin: 0 8px;
 }
 
 /* media tablet */
 @media screen and (min-width: 768px){
 
     .container{
-        width: 704px;
+        min-width: 768px;
         padding: 0 32px;
     }
 
     .review-title{
         font-size: 48px;
-        width: 704px;
+        
     }
 
     .review-main-text{
         font-size: 14px;
         line-height: 1.29;
-        width: 571px;
-        margin-bottom: 75px;
+       
+       margin: 0 auto;
     }
 
 
@@ -124,18 +137,23 @@
 
     .review-list{
         display: flex;
-        justify-content: space-between;
+        
         gap: 32px;
         
     }
 
     .review-item{
         width: 336px;
+        padding: 32px 20px;
         
     }
 
     .sec-reviews{
         padding-bottom: 150px;
+    }
+
+    .sec-reviews-descr {
+        min-width: 704px;
     }
 }
 
@@ -144,7 +162,7 @@
 @media screen and (min-width: 1280px){
 
     .container{
-        width: 1180px;
+        min-width: 1280px;
         padding: 0 50px;
     }
  .third {
@@ -154,7 +172,7 @@
  }
 
  .review-title{
-  width: 854px;
+  min-width: 854px;
  }
 
  .review-main-text{
@@ -162,29 +180,45 @@
  }
 
  .review-list{
-    min-width: 1180px;
+    
     gap: 26px;
     
    
  }
 
  .review-item{
-   width: 376px;
+   min-width: 376px;
    padding: 32px 28px;
+   
  }
+
+ .review-info {
+     margin: 0;
+ }
+
+  .sec-reviews-descr {
+      min-width: 854px;
+      margin: 0 auto 75px;
+  }
 }
 
 /* media desktop */
 @media screen and (min-width: 1440px){
     .container {
-        width: 1240px;
+        min-width: 1440px;
         padding: 0 100px;
     }
 
     .review-item {
-        width: 392px;
+        min-width: 392px;
         padding: 32px 36px;
     }
+    .review-list {
+    
+        gap: 32px;
+    }
+
+
 }
 
 
