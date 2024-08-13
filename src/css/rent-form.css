@@ -70,6 +70,12 @@
   color: #fbfbfb;
   border: none;
   margin-top: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rent-button:hover {
+  background: #fbfbfb;
+  color: #1b414b;
 }
 .rent-image {
   border-radius: 24px;
