@@ -113,6 +113,21 @@
   color: rgba(251, 251, 251, 0.4);
 }
 
+@media screen and (max-width: 345px) {
+  .footer-logo {
+    width: 100%;
+    display: flex;
+  }
+
+  .footer-logo span {
+    margin: auto;
+  }
+
+  .footer-nav {
+    margin: 20px auto 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     padding: 0 16px;
